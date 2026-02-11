@@ -39,10 +39,11 @@
 
         <!-- MySQL JDBC (Stable version) -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.28</version>
-        </dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.3.0</version>
+</dependency>
+
       
 <dependency>
     <groupId>org.apache.poi</groupId>
