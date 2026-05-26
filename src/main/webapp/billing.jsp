@@ -116,7 +116,7 @@
 </td>
 
 <td>
-<input class="price" name="price[]" placeholder="Auto-filled price" readonly required>
+<input class="price" name="price[]" placeholder="Enter price" required>
 </td>
 
 <td>
