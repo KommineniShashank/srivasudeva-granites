@@ -37,7 +37,7 @@ public class StockInOutServlet extends HttpServlet {
         }
 
         request.setAttribute("graniteList", graniteList);
-        request.getRequestDispatcher("stockInOut.jsp").forward(request, response);
+        request.getRequestDispatcher("/stockInOut.jsp").forward(request, response);
     }
 
     /* ===============================

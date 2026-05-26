@@ -67,6 +67,6 @@ public class ViewBillDetailsServlet extends HttpServlet {
             throw new ServletException(e);
         }
 
-        request.getRequestDispatcher("viewBillDetails.jsp").forward(request, response);
+        request.getRequestDispatcher("/viewBillDetails.jsp").forward(request, response);
     }
 }

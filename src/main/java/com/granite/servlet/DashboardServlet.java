@@ -90,7 +90,7 @@ public class DashboardServlet extends HttpServlet {
         request.setAttribute("nonGST", nonGST);
         request.setAttribute("graniteSummary", graniteSummary);
 
-        request.getRequestDispatcher("dashboard.jsp")
+        request.getRequestDispatcher("/dashboard.jsp")
                .forward(request, response);
     }
 }

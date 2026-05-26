@@ -49,7 +49,7 @@ public class ViewExpensesServlet extends HttpServlet {
         request.setAttribute("expenses", expenses);
         request.setAttribute("totalExpense", totalExpense);
 
-        request.getRequestDispatcher("viewExpenses.jsp")
+        request.getRequestDispatcher("/viewExpenses.jsp")
                .forward(request, response);
     }
 }

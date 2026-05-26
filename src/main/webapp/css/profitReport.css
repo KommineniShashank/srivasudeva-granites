@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.container {
+    width: 94%;
+    max-width: 1200px;
+    margin: 30px auto 80px;
+}
+
+h2 {
+    margin-bottom: 42px;
+    color: #f8fafc;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(14px);
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 7px;
+}
+
+.sales-card::before {
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.purchase-card::before {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.expense-card::before {
+    background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+.profit-card::before {
+    background: linear-gradient(90deg, #2563eb, #4f46e5);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.55);
+}
+
+.icon {
+    margin-bottom: 14px;
+    font-size: 38px;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #334155;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.value {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.green { color: #16a34a; }
+.orange { color: #f59e0b; }
+.red { color: #dc2626; }
+.blue { color: #2563eb; }
+
+@media (max-width: 768px) {
+    h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 26px 20px;
+    }
+
+    .value {
+        font-size: 26px;
+    }
+
+    .icon {
+        font-size: 34px;
+    }
+}

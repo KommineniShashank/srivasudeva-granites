@@ -58,7 +58,7 @@ public class EditBillServlet extends HttpServlet {
             request.setAttribute("billId", billId);
             request.setAttribute("items", items);
 
-            request.getRequestDispatcher("editBill.jsp")
+            request.getRequestDispatcher("/editBill.jsp")
                    .forward(request, response);
 
         } catch (Exception e) {

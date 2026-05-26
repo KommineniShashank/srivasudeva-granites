@@ -64,7 +64,7 @@ public class ProfitReportServlet extends HttpServlet {
         request.setAttribute("totalPurchaseCost", totalPurchaseCost);
         request.setAttribute("netProfit", netProfit);
 
-        request.getRequestDispatcher("profitReport.jsp")
+        request.getRequestDispatcher("/profitReport.jsp")
                .forward(request, response);
     }
 }

@@ -37,7 +37,7 @@ public class EditExpenseServlet extends HttpServlet {
             throw new ServletException(e);
         }
 
-        request.getRequestDispatcher("editExpense.jsp")
+        request.getRequestDispatcher("/editExpense.jsp")
                .forward(request, response);
     }
 }

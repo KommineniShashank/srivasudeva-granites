@@ -83,6 +83,6 @@ public class InvoiceServlet extends HttpServlet {
             throw new ServletException(e);
         }
 
-        request.getRequestDispatcher("invoice.jsp").forward(request, response);
+        request.getRequestDispatcher("/invoice.jsp").forward(request, response);
     }
 }

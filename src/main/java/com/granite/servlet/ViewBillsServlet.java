@@ -10,6 +10,7 @@ import java.sql.*;
 import java.util.*;
 
 @WebServlet("/viewBills")
+
 public class ViewBillsServlet extends HttpServlet {
 
     @Override
@@ -71,7 +72,7 @@ public class ViewBillsServlet extends HttpServlet {
         }
 
         request.setAttribute("bills", bills);
-        request.getRequestDispatcher("viewBills.jsp")
+        request.getRequestDispatcher("/viewBills.jsp")
                .forward(request, response);
     }
 }

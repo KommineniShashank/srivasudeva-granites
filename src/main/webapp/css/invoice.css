@@ -1,0 +1,161 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 16px;
+    color: #111827;
+    font-family: "Inter", sans-serif;
+    background: #f8fafc;
+}
+
+.invoice {
+    max-width: 900px;
+    margin: auto;
+    padding: 28px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+    padding-bottom: 18px;
+    border-bottom: 3px solid #1e293b;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header p {
+    margin: 4px 0;
+    color: #374151;
+    font-size: 14px;
+}
+
+.contact {
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+.bill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.bill-info span {
+    min-width: 160px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 24px;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 12px;
+    background: #1e293b;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.summary {
+    width: 45%;
+    margin-top: 26px;
+    margin-left: auto;
+    padding: 12px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border-collapse: collapse;
+}
+
+.summary td {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.grand td {
+    padding-top: 14px;
+}
+
+.label {
+    text-align: left;
+}
+
+.value {
+    text-align: right;
+    font-weight: 600;
+}
+
+.discount-row {
+    color: #dc2626;
+}
+
+.transport-row {
+    color: #15803d;
+}
+
+.grand {
+    color: #15803d;
+    font-size: 20px;
+    font-weight: 700;
+    border-top: 2px solid #1e293b;
+}
+
+.thank-you {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.print-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.print-btn button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #4f46e5, #2563eb);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    transition: all 0.25s ease;
+}
+
+.print-btn button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.45);
+}
+
+.print-btn button:active {
+    transform: translateY(0);
+}
+
+@media print {
+    .print-btn {
+        display: none;
+    }
+}

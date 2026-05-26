@@ -49,7 +49,7 @@ public class ViewGraniteStockServlet extends HttpServlet {
         }
 
         request.setAttribute("graniteList", graniteList);
-        request.getRequestDispatcher("viewGraniteStock.jsp")
+        request.getRequestDispatcher("/viewGraniteStock.jsp")
                .forward(request, response);
     }
 }
